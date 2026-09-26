@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<meta name="description" content="DISTRITTO — Catálogo de gorras urbanas disponibles en Bogotá.">
+<title>DISTRITTO — Catálogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cfroquemes5.github.io" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--c:#111;--a:#1C1C1C;--z:#4A4A4A;--o:#3D4A35;--s:#6B7A5E;--b:#EDE9E2;--iv:#F5F3EE;--fd:'Barlow Condensed',sans-serif;--fb:'Barlow',sans-serif;--nav:60px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}body{background:var(--iv);color:var(--c);font-family:var(--fb);overflow-x:hidden;line-height:1}img{display:block;max-width:100%}button{font-family:inherit;cursor:pointer}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:var(--c);height:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(14px,4vw,40px);border-bottom:1px solid var(--o)}.nl{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}.nl svg{width:28px;height:28px;flex-shrink:0}.nm{font-family:var(--fd);font-size:clamp(17px,4vw,22px);font-weight:900;color:var(--b);letter-spacing:.06em;white-space:nowrap}.nr{display:flex;align-items:center;gap:clamp(10px,3vw,24px)}.na{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--b);text-decoration:none;opacity:.72;white-space:nowrap}.nw{background:var(--o);color:var(--b);padding:10px 18px;font-family:var(--fd);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:none;white-space:nowrap}
+.hero{margin-top:var(--nav);background:var(--c);display:grid;grid-template-columns:1fr 1fr;min-height:calc(88vh - var(--nav));overflow:hidden}.hl{display:flex;flex-direction:column;justify-content:center;padding:clamp(34px,6vw,80px)}.he{font-family:var(--fd);font-size:11px;font-weight:800;letter-spacing:.42em;text-transform:uppercase;color:var(--o);margin-bottom:22px}.ht{font-family:var(--fd);font-size:clamp(54px,7.6vw,96px);font-weight:900;color:var(--b);line-height:.9;letter-spacing:-.02em;margin-bottom:26px}.ht em{color:var(--o);font-style:normal}.hd{font-size:clamp(14px,1.7vw,16px);font-weight:300;color:var(--s);line-height:1.8;max-width:440px;margin-bottom:34px}.hc{display:flex;gap:12px;flex-wrap:wrap}.bp,.bg{padding:14px 28px;font-family:var(--fd);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;display:inline-block}.bp{background:var(--o);color:var(--b)}.bg{background:transparent;color:var(--b);border:1px solid rgba(237,233,226,.28)}.hr{background:#eee;min-height:340px}.hr img{width:100%;height:100%;object-fit:cover;object-position:center}
+.intro{background:var(--a);border-top:2px solid var(--o);padding:clamp(34px,5vw,60px) clamp(22px,5vw,60px)}.intro-logo{display:flex;align-items:center;gap:10px;margin-bottom:26px}.intro-logo svg{width:34px;height:34px}.intro-logo span{font-family:var(--fd);font-size:30px;font-weight:900;color:var(--b);letter-spacing:.08em}.intro h2{font-family:var(--fd);font-size:12px;font-weight:800;letter-spacing:.38em;color:var(--s);text-transform:uppercase;margin-bottom:18px}.intro p{font-size:clamp(15px,2vw,18px);font-weight:300;color:var(--b);line-height:1.75;opacity:.86;max-width:780px}
+.cn{background:var(--b);border-bottom:1px solid #D8D5CE;padding:0 clamp(14px,4vw,56px);display:flex;align-items:center;overflow-x:auto;position:sticky;top:var(--nav);z-index:800;-webkit-overflow-scrolling:touch;scrollbar-width:none}.cn::-webkit-scrollbar{display:none}.cb{font-family:var(--fd);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--z);background:none;border:none;padding:16px 18px;border-bottom:3px solid transparent;white-space:nowrap;flex-shrink:0}.cb.active{color:var(--o);border-bottom-color:var(--o)}
+.cs{padding:clamp(44px,6vw,72px) clamp(16px,5vw,56px) 0}.ch{margin-bottom:34px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}.ce{font-family:var(--fd);font-size:10px;font-weight:800;letter-spacing:.4em;text-transform:uppercase;color:var(--o);margin-bottom:8px}.ct{font-family:var(--fd);font-size:clamp(30px,4vw,46px);font-weight:900;color:var(--c);line-height:1}.cc{font-family:var(--fd);font-size:12px;color:var(--z);white-space:nowrap}.cdv{height:2px;background:var(--o);width:44px;margin-bottom:34px}.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:2px}
+.pc{background:#fff;position:relative;transition:transform .25s}.pc:hover{transform:translateY(-3px)}.pw{position:relative;aspect-ratio:1/1;overflow:hidden;background:#f3f1ec}.pw img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .35s ease}.pc:hover .pw img{transform:scale(1.035)}.pt{position:absolute;top:12px;left:12px;z-index:2}.tg{font-family:var(--fd);font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 9px;background:var(--o);color:var(--b)}.pb{padding:22px}.pcl{font-family:var(--fd);font-size:10px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--o);margin-bottom:8px}.pn{font-family:var(--fd);font-size:24px;font-weight:900;color:var(--c);line-height:1.05;margin-bottom:8px}.pr{font-family:var(--fd);font-size:10px;font-weight:600;letter-spacing:.17em;color:var(--z);text-transform:uppercase;margin-bottom:14px}.pco{display:flex;gap:7px;align-items:center;margin-bottom:14px;flex-wrap:wrap}.sw{width:24px;height:24px;border-radius:50%;border:2.5px solid #D8D5CE;transition:transform .2s,border-color .2s}.sw.active,.sw:hover{transform:scale(1.14);border-color:var(--o)}.pp{font-family:var(--fd);font-size:25px;font-weight:900;color:var(--c);margin-bottom:16px}.pca{display:flex;gap:7px}.bcd,.bwa{font-family:var(--fd);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;border:none;padding:12px;text-align:center}.bcd{flex:1;background:var(--c);color:var(--b)}.bwa{background:var(--o);color:var(--b);white-space:nowrap}
+.mo{position:fixed;inset:0;background:rgba(17,17,17,.94);z-index:9999;display:none;align-items:center;justify-content:center;padding:clamp(8px,2vw,20px);overscroll-behavior:contain}.mo.open{display:flex}.mi{background:#fff;width:100%;max-width:1040px;max-height:calc(100dvh - 20px);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;position:relative}.mclose{position:absolute;top:12px;right:12px;background:var(--c);color:var(--b);border:none;width:40px;height:40px;font-size:22px;z-index:10}.mg{display:flex;flex-direction:column;background:#f3f1ec;overflow:hidden}.mm{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;display:block}.mth{display:flex;gap:5px;padding:8px;background:var(--b);overflow-x:auto;flex-shrink:0}.th{width:70px;height:70px;object-fit:cover;object-position:center top;cursor:pointer;border:3px solid transparent;flex-shrink:0}.th.active{border-color:var(--o)}.mf{padding:clamp(22px,3vw,44px);display:flex;flex-direction:column;overflow-y:auto}.mk{font-family:var(--fd);font-size:10px;font-weight:800;letter-spacing:.35em;color:var(--o);text-transform:uppercase;margin-bottom:10px}.mh{font-family:var(--fd);font-size:clamp(26px,3vw,34px);font-weight:900;color:var(--c);line-height:1;margin-bottom:8px}.mr{font-family:var(--fd);font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--z);text-transform:uppercase;margin-bottom:16px}.mp{font-family:var(--fd);font-size:30px;font-weight:900;color:var(--c);margin-bottom:16px}.md{font-size:14px;font-weight:300;color:var(--z);line-height:1.85;margin-bottom:20px;border-top:1px solid #E8E5DE;padding-top:16px}.mcl{font-family:var(--fd);font-size:10px;font-weight:800;letter-spacing:.25em;color:var(--z);text-transform:uppercase;margin-bottom:10px}.mcs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}.swl{width:34px;height:34px;border-radius:50%;border:3px solid transparent}.swl.active{border-color:var(--o);transform:scale(1.08)}.cn2{font-family:var(--fd);font-size:12px;color:var(--z);margin-bottom:16px}.ms{border-top:1px solid #E8E5DE;padding-top:16px;margin-bottom:18px}.sr{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--iv);gap:20px}.sk{font-family:var(--fd);font-weight:800;letter-spacing:.12em;color:var(--z);text-transform:uppercase;font-size:10px}.sv{font-size:13px;color:var(--c);text-align:right}.bwa2{background:var(--o);color:var(--b);padding:15px;font-family:var(--fd);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;text-align:center;margin-top:auto}
+footer{background:var(--c);padding:44px clamp(22px,5vw,56px);border-top:2px solid var(--o)}.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:42px;margin-bottom:32px}.fb p{font-size:14px;font-weight:300;color:var(--s);line-height:1.85;margin-top:16px}.fl h4{font-family:var(--fd);font-size:10px;font-weight:800;letter-spacing:.28em;color:var(--s);text-transform:uppercase;margin-bottom:16px}.fl a{display:block;font-size:13px;color:var(--z);text-decoration:none;margin-bottom:9px}.fb2{border-top:1px solid rgba(237,233,226,.08);padding-top:24px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.fc{font-family:var(--fd);font-size:10px;letter-spacing:.16em;color:var(--z);text-transform:uppercase}.waf{position:fixed;bottom:24px;right:24px;background:var(--o);color:var(--b);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:890;box-shadow:0 4px 18px rgba(61,74,53,.4)}.waf svg{width:28px;height:28px}
+@media(max-width:820px){:root{--nav:58px}nav{padding:0 14px}.nm{font-size:18px}.na{display:none}.nw{padding:9px 12px;font-size:10px;letter-spacing:.13em}.hero{grid-template-columns:1fr;min-height:auto}.hl{padding:42px 22px 28px}.ht{font-size:58px}.hd{font-size:15px;margin-bottom:24px}.hc{display:grid;grid-template-columns:1fr;gap:10px}.bp,.bg{text-align:center;width:100%;padding:15px 10px}.hr{display:block;min-height:0;aspect-ratio:4/5;order:-1}.hr img{object-fit:cover;object-position:center}.intro{padding:36px 22px}.intro-logo span{font-size:24px}.cn{top:var(--nav);padding:0 10px}.cb{font-size:10px;padding:14px 14px}.cs{padding:38px 12px 0}.ch{margin-bottom:24px}.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.pb{padding:14px 12px 16px}.pcl{font-size:8px;letter-spacing:.22em}.pn{font-size:18px}.pr{font-size:9px}.pp{font-size:20px}.pca{flex-direction:column}.bcd,.bwa{width:100%;font-size:9px;padding:11px 8px}.mi{grid-template-columns:1fr;max-height:calc(100dvh - 12px)}.mg{max-height:58dvh}.mm{aspect-ratio:1/1;max-height:48dvh}.th{width:62px;height:62px}.mf{padding:18px 16px}.fg{grid-template-columns:1fr;gap:28px}}
+@media(max-width:390px){.ht{font-size:50px}.pn{font-size:17px}.pb{padding:12px 10px 14px}.sw{width:22px;height:22px}}
+
+/* ── SAFE AREA (iPhone notch/home bar) ── */
+body{padding-bottom:env(safe-area-inset-bottom,0px)}
+.waf{bottom:calc(20px + env(safe-area-inset-bottom,0px));right:calc(20px + env(safe-area-inset-right,0px))}
+
+/* ── BETTER TOUCH TARGETS ── */
+.sw,.swl{min-width:36px;min-height:36px;cursor:pointer}
+.cb{min-height:48px;display:flex;align-items:center}
+.bcd,.bwa,.bwa2{min-height:44px;display:flex;align-items:center;justify-content:center}
+.mclose{min-width:44px;min-height:44px;cursor:pointer}
+
+/* ── MODAL MOBILE FULL FIX ── */
+@media(max-width:820px){
+  .mo{padding:0;align-items:flex-end}
+  .mi{max-height:96dvh;max-height:96vh;border-radius:12px 12px 0 0;overflow-y:auto}
+  .mg{max-height:45dvh;max-height:45vh;flex-shrink:0}
+  .mm{width:100%;height:100%;object-fit:cover;max-height:45dvh;max-height:45vh;aspect-ratio:auto}
+  .mf{padding:16px;overflow-y:auto;max-height:55dvh;max-height:55vh}
+  .mth{padding:6px;gap:4px}
+  .th{width:56px;height:56px}
+  .mclose{top:10px;right:10px;width:36px;height:36px;font-size:18px}
+  .swl{width:30px;height:30px}
+}
+
+/* ── CARD GRID ON VERY SMALL SCREENS ── */
+@media(max-width:340px){
+  .pg{grid-template-columns:1fr}
+  .ht{font-size:44px}
+}
+
+/* ── PERSONALIZATION SECTION ── */
+.perso-section{background:var(--c);border-top:2px solid var(--o);padding:clamp(48px,7vw,80px) clamp(16px,5vw,56px)}
+.perso-hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,60px);align-items:center;margin-bottom:clamp(40px,6vw,64px)}
+.perso-text .pe{font-family:var(--fd);font-size:11px;font-weight:800;letter-spacing:.42em;text-transform:uppercase;color:var(--o);margin-bottom:16px}
+.perso-text .pt2{font-family:var(--fd);font-size:clamp(36px,5.5vw,72px);font-weight:900;color:var(--b);line-height:.92;letter-spacing:-.02em;margin-bottom:20px}
+.perso-text .pt2 em{color:var(--o);font-style:normal}
+.perso-text .pd{font-size:clamp(14px,1.7vw,16px);font-weight:300;color:var(--s);line-height:1.8;max-width:440px;margin-bottom:28px}
+.perso-text .pw2{display:flex;gap:12px;flex-wrap:wrap}
+.perso-img{position:relative;border-radius:2px;overflow:hidden}
+.perso-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;aspect-ratio:3/4}
+.perso-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.perso-card{position:relative;overflow:hidden;background:#1a1a1a}
+.perso-card img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;display:block;transition:transform .35s}
+.perso-card:hover img{transform:scale(1.04)}
+.perso-card-label{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;background:linear-gradient(0deg,rgba(17,17,17,.85) 0%,transparent 100%)}
+.perso-card-label p{font-family:var(--fd);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--b)}
+.perso-cta{margin-top:clamp(32px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:32px;border-top:1px solid rgba(237,233,226,.12)}
+.perso-cta-text p:first-child{font-family:var(--fd);font-size:11px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--o);margin-bottom:6px}
+.perso-cta-text p:last-child{font-size:clamp(13px,1.8vw,15px);font-weight:300;color:var(--b);line-height:1.7;max-width:500px}
+@media(max-width:820px){
+  .perso-hero{grid-template-columns:1fr}
+  .perso-img{display:none}
+  .perso-grid{grid-template-columns:repeat(2,1fr)}
+  .perso-cta{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){
+  .perso-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<nav><a class="nl" href="#inicio" aria-label="DISTRITTO inicio"><svg viewBox="0 0 100 100" aria-hidden="true"><g transform="translate(8,8)"><polygon points="42,4 80,42 42,80 4,42" stroke="#EDE9E2" stroke-width="2.2" fill="none" stroke-linejoin="round"/><line x1="4" y1="42" x2="42" y2="4" stroke="#3D4A35" stroke-width="1.5"/><line x1="42" y1="4" x2="80" y2="42" stroke="#3D4A35" stroke-width="1.5"/><line x1="80" y1="42" x2="42" y2="80" stroke="#3D4A35" stroke-width="1.5"/><line x1="42" y1="80" x2="4" y2="42" stroke="#3D4A35" stroke-width="1.5"/><circle cx="42" cy="4" r="4.5" fill="#3D4A35"/><circle cx="80" cy="42" r="4.5" fill="#3D4A35"/><circle cx="42" cy="80" r="4.5" fill="#3D4A35"/><circle cx="4" cy="42" r="4.5" fill="#3D4A35"/><polygon points="42,26 60,42 42,58 24,42" fill="#EDE9E2"/></g></svg><span class="nm">DISTRITTO</span></a><div class="nr"><a href="#colecciones" class="na">Colecciones</a><a href="#catalogo" class="na">Catálogo</a><a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20consultar%20el%20cat%C3%A1logo" target="_blank" rel="noopener" class="nw">Consultar</a></div></nav>
+<section class="hero" id="inicio"><div class="hl"><div class="he">Bogotá, 2026</div><h1 class="ht">GORRAS<br>PARA LA<br><em>CALLE.</em></h1><p class="hd">Gorras urbanas seleccionadas en Bogotá. Modelos disponibles para combinar con tu estilo diario.</p><div class="hc"><a href="#catalogo" class="bp">Ver catálogo</a><a href="https://wa.me/573218194617" target="_blank" rel="noopener" class="bg">Consultar por WhatsApp</a></div></div><div class="hr"><div id="hero-carousel" style="position:relative;width:100%;height:100%;overflow:hidden">
+  <img id="hc-img-0" src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/0.INSIGNIA/1.png" 
+       alt="DISTRITTO — Gorra insignia" width="1122" height="1402"
+       fetchpriority="high" loading="eager"
+       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 1s ease">
+  <img id="hc-img-1" src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/0.INSIGNIA/2.png" 
+       alt="DISTRITTO — Gorra insignia 2" width="1122" height="1402"
+       loading="lazy"
+       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 1s ease">
+  <img id="hc-img-2" src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/0.1CARTAGENA/1.png" 
+       alt="DISTRITTO Cartagena — Del Distrito a la Costa" width="960" height="960"
+       loading="lazy"
+       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0;transition:opacity 1s ease">
+</div></div></section>
+<section class="intro" id="colecciones"><div class="intro-logo"><svg viewBox="0 0 100 100" aria-hidden="true"><g transform="translate(8,8)"><polygon points="42,4 80,42 42,80 4,42" stroke="#EDE9E2" stroke-width="2.2" fill="none" stroke-linejoin="round"/><line x1="4" y1="42" x2="42" y2="4" stroke="#3D4A35" stroke-width="1.5"/><line x1="42" y1="4" x2="80" y2="42" stroke="#3D4A35" stroke-width="1.5"/><line x1="80" y1="42" x2="42" y2="80" stroke="#3D4A35" stroke-width="1.5"/><line x1="42" y1="80" x2="4" y2="42" stroke="#3D4A35" stroke-width="1.5"/><circle cx="42" cy="4" r="4.5" fill="#3D4A35"/><circle cx="80" cy="42" r="4.5" fill="#3D4A35"/><circle cx="42" cy="80" r="4.5" fill="#3D4A35"/><circle cx="4" cy="42" r="4.5" fill="#3D4A35"/><polygon points="42,26 60,42 42,58 24,42" fill="#EDE9E2"/></g></svg><span>DISTRITTO</span></div><h2>Nuestra selección</h2><p>Modelos seleccionados por estilo, marca y disponibilidad en Bogotá. Escríbenos por WhatsApp y te confirmamos colores, referencias y entrega.</p></section>
+<div class="cn" aria-label="Filtros de colección"><button class="cb active" data-col="all" onclick="filterCol(this)">Todos</button><button class="cb" data-col="polo-ralph-lauren" onclick="filterCol(this)">Polo Ralph Lauren</button><button class="cb" data-col="hugo-boss" onclick="filterCol(this)">Hugo Boss</button><button class="cb" data-col="lacoste" onclick="filterCol(this)">Lacoste</button><button class="cb" data-col="adidas" onclick="filterCol(this)">Adidas</button><button class="cb" data-col="otras-marcas" onclick="filterCol(this)">Otras marcas</button><button class="cb" data-col="leyendas-ciudad" onclick="filterCol(this)">Leyendas de Ciudad</button><button class="cb" data-col="raices" onclick="filterCol(this)">Raíces</button><button class="cb" data-col="personalizacion" onclick="goPerso(this)">Personalización</button></div>
+<main id="catalogo"></main>
+<div class="mo" id="modal" onclick="closeModal(event)" role="dialog" aria-modal="true"><div class="mi"><button class="mclose" onclick="closeModal()" aria-label="Cerrar">×</button><div class="mg"><img id="modal-main" class="mm" src="" alt="" loading="eager"><div class="mth" id="modal-thumbs" role="list"></div></div><div class="mf"><div class="mk" id="m-col"></div><h2 class="mh" id="m-name"></h2><div class="mr" id="m-ref"></div><div class="mp" id="m-price"></div><p class="md" id="m-desc"></p><div class="mcl">Color</div><div class="mcs" id="m-colors" role="list"></div><div class="cn2" id="m-color-name"></div><div class="ms" id="m-specs"></div><a id="m-wa" href="#" target="_blank" rel="noopener" class="bwa2">Consultar por WhatsApp</a></div></div></div>
+<a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20consultar%20el%20cat%C3%A1logo" target="_blank" rel="noopener" class="waf" aria-label="WhatsApp DISTRITTO"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
+
+<!-- SECCIÓN PERSONALIZACIÓN -->
+<section class="perso-section" id="personalizacion">
+  <div class="perso-hero">
+    <div class="perso-text">
+      <div class="pe">Servicio exclusivo</div>
+      <h2 class="pt2">PERSONALIZA<br>TU <em>EQUIPO.</em></h2>
+      <p class="pd">Tu marca bordada en gorras de calidad. Producción bajo pedido, desde 6 unidades. Ideal para empresas, equipos, uniformes y obsequios corporativos.</p>
+      <div class="pw2">
+        <a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20personalizar%20gorras%20con%20mi%20logo" target="_blank" rel="noopener" class="bp">Consultar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="perso-img">
+      <img src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/10.PERSONALIZACION/1.png" 
+           alt="Personaliza tu gorra con tu marca" 
+           width="941" height="1672" loading="lazy">
+    </div>
+  </div>
+  
+  <div class="pg" style="margin-top:0">
+    <article class="pc">
+      <div class="pw">
+        <img src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/10.PERSONALIZACION/2.png"
+             alt="Gorras personalizadas - Tu marca aquí"
+             width="1254" height="1254" loading="lazy"
+             style="object-position:center center">
+        <div class="pt"><span class="tg">Personalización</span></div>
+      </div>
+      <div class="pb">
+        <div class="pcl">Bordado corporativo</div>
+        <div class="pn">Tu marca aquí</div>
+        <div class="pr">DTT-PERSO · Múltiples colores</div>
+        <div class="pp">Desde 6 unidades</div>
+        <div class="pca">
+          <a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20personalizar%20gorras%20con%20mi%20logo"
+             target="_blank" rel="noopener" class="bwa" style="flex:1;text-align:center;text-decoration:none">
+            Más detalles
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="pc">
+      <div class="pw">
+        <img src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/10.PERSONALIZACION/3.png"
+             alt="Bordado profesional en gorra negra"
+             width="1254" height="1254" loading="lazy"
+             style="object-position:center center">
+        <div class="pt"><span class="tg">Personalización</span></div>
+      </div>
+      <div class="pb">
+        <div class="pcl">Bordado corporativo</div>
+        <div class="pn">Bordado profesional</div>
+        <div class="pr">DTT-PERSO · Gorra negra</div>
+        <div class="pp">Desde 6 unidades</div>
+        <div class="pca">
+          <a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20personalizar%20gorras%20con%20mi%20logo"
+             target="_blank" rel="noopener" class="bwa" style="flex:1;text-align:center;text-decoration:none">
+            Más detalles
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="pc">
+      <div class="pw">
+        <img src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/10.PERSONALIZACION/4.png"
+             alt="Hecho para tu marca - gorra beige"
+             width="1254" height="1254" loading="lazy"
+             style="object-position:center center">
+        <div class="pt"><span class="tg">Personalización</span></div>
+      </div>
+      <div class="pb">
+        <div class="pcl">Bordado corporativo</div>
+        <div class="pn">Hecho para tu marca</div>
+        <div class="pr">DTT-PERSO · Gorra beige</div>
+        <div class="pp">Desde 6 unidades</div>
+        <div class="pca">
+          <a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20personalizar%20gorras%20con%20mi%20logo"
+             target="_blank" rel="noopener" class="bwa" style="flex:1;text-align:center;text-decoration:none">
+            Más detalles
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="pc">
+      <div class="pw">
+        <img src="https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/10.PERSONALIZACION/5.png"
+             alt="Tu logo, tu distrito - gorra gris"
+             width="1254" height="1254" loading="lazy"
+             style="object-position:center center">
+        <div class="pt"><span class="tg">Personalización</span></div>
+      </div>
+      <div class="pb">
+        <div class="pcl">Bordado corporativo</div>
+        <div class="pn">Tu logo, tu distrito</div>
+        <div class="pr">DTT-PERSO · Gorra gris</div>
+        <div class="pp">Desde 6 unidades</div>
+        <div class="pca">
+          <a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20personalizar%20gorras%20con%20mi%20logo"
+             target="_blank" rel="noopener" class="bwa" style="flex:1;text-align:center;text-decoration:none">
+            Más detalles
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="perso-cta">
+    <div class="perso-cta-text">
+      <p>¿Cómo funciona?</p>
+      <p>Envianos tu logo por WhatsApp · Te mandamos un mockup de aprobación sin costo · Confirmás y producimos desde 6 unidades. Entrega en Bogotá.</p>
+    </div>
+    <a href="https://wa.me/573218194617?text=Hola%20DISTRITTO%2C%20quiero%20personalizar%20gorras%20con%20mi%20logo" 
+       target="_blank" rel="noopener" class="bp" 
+       style="white-space:nowrap;min-width:200px;text-align:center">
+      Más detalles →
+    </a>
+  </div>
+</section>
+
+<footer><div class="fg"><div class="fb"><div class="intro-logo"><svg viewBox="0 0 100 100" aria-hidden="true"><g transform="translate(8,8)"><polygon points="42,4 80,42 42,80 4,42" stroke="#EDE9E2" stroke-width="2.2" fill="none" stroke-linejoin="round"/><line x1="4" y1="42" x2="42" y2="4" stroke="#3D4A35" stroke-width="1.5"/><line x1="42" y1="4" x2="80" y2="42" stroke="#3D4A35" stroke-width="1.5"/><line x1="80" y1="42" x2="42" y2="80" stroke="#3D4A35" stroke-width="1.5"/><line x1="42" y1="80" x2="4" y2="42" stroke="#3D4A35" stroke-width="1.5"/><circle cx="42" cy="4" r="4.5" fill="#3D4A35"/><circle cx="80" cy="42" r="4.5" fill="#3D4A35"/><circle cx="42" cy="80" r="4.5" fill="#3D4A35"/><circle cx="4" cy="42" r="4.5" fill="#3D4A35"/><polygon points="42,26 60,42 42,58 24,42" fill="#EDE9E2"/></g></svg><span>DISTRITTO</span></div><p>Modelos seleccionados por estilo, marca y disponibilidad en Bogotá. Escríbenos y te confirmamos colores, referencias y entrega.</p></div><div class="fl"><h4>Colecciones</h4><a href="#polo-ralph-lauren">Polo Ralph Lauren</a><a href="#hugo-boss">Hugo Boss</a><a href="#lacoste">Lacoste</a><a href="#adidas">Adidas</a><a href="#otras-marcas">Otras marcas</a><a href="#leyendas-ciudad">Leyendas de Ciudad</a><a href="#raices">Raíces</a><a href="#personalizacion">Personalización</a></div><div class="fl"><h4>Contacto</h4><a href="https://wa.me/573218194617" target="_blank" rel="noopener">WhatsApp</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Bogotá, Colombia</a></div></div><div class="fb2"><span class="fc">© 2026 DISTRITTO® — Gorras · Bogotá</span><span class="fc">Estilo de Distrito.</span></div></footer>
+<script>
+const P=[{"id":"polo-clasica","marca":"Polo Ralph Lauren","nombre":"Polo Clásica","coleccion":"Polo Ralph Lauren","col_id":"polo-ralph-lauren","ref":"DTT-PRL-001","precio":"$60.000","descripcion":"Gorra clásica de uso diario, con visera curva, ajuste posterior y presencia limpia. Una referencia fácil de combinar para looks urbanos y casuales.","tags":["Nuevo"],"cierre":"Correa ajustable","tipo":"Gorra curva clásica","variantes":[{"id":"default","nombre":"Caqui","hex":"#C4A882","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/4.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/5.png"]}]},{"id":"polo-caballo-grande","marca":"Polo Ralph Lauren","nombre":"Polo Caballo Central","coleccion":"Polo Ralph Lauren","col_id":"polo-ralph-lauren","ref":"DTT-PRL-002","precio":"$60.000","descripcion":"Diseño con bordado protagonista al frente y construcción clásica. Una opción con más presencia visual sin perder versatilidad.","tags":["Nuevo"],"cierre":"Correa ajustable","tipo":"Gorra curva estructurada","variantes":[{"id":"1.COLO_BLANCO_PALETA_NUDE","nombre":"Blanco · Nude","hex":"#F0EDE5","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/4.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/5.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/6.png"]},{"id":"2.COLOR_CAQUI_PALETA_VERDE","nombre":"Caqui · Verde","hex":"#C4A882","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/4.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/5.png"]}]},{"id":"polo-letras","marca":"Polo Ralph Lauren","nombre":"Polo Bordado Frontal","coleccion":"Polo Ralph Lauren","col_id":"polo-ralph-lauren","ref":"DTT-PRL-003","precio":"$60.000","descripcion":"Modelo de paleta oscura con bordado frontal de alta lectura. Funciona bien para un estilo sobrio, directo y fácil de llevar.","tags":["Nuevo"],"cierre":"Correa ajustable","tipo":"Gorra curva casual","variantes":[{"id":"default","nombre":"Negro","hex":"#111111","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/4.png"]}]},{"id":"boss-letras","marca":"Hugo Boss","nombre":"Boss Logo Frontal","coleccion":"Hugo Boss","col_id":"hugo-boss","ref":"DTT-HB-001","precio":"$60.000","descripcion":"Gorra de estructura firme con logo frontal limpio. Una alternativa sobria para combinar con prendas básicas o looks más pulidos.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra estructurada","variantes":[{"id":"default","nombre":"Negro","hex":"#111111","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/4.png"]}]},{"id":"boss-deportiva","marca":"Hugo Boss","nombre":"Boss Sport","coleccion":"Hugo Boss","col_id":"hugo-boss","ref":"DTT-HB-002","precio":"$60.000","descripcion":"Modelo de enfoque deportivo con contraste de color y acabado funcional. Pensada para uso diario, entrenamiento o estilo urbano activo.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra deportiva","variantes":[{"id":"default","nombre":"Negro · Rojo","hex":"#1A1A1A","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/2.HUGO_BOSS_DEPORTIVA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/2.HUGO_BOSS_DEPORTIVA/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/2.HUGO_BOSS_DEPORTIVA/3.png"]}]},{"id":"lacoste-paris","marca":"Lacoste","nombre":"Lacoste Paris","coleccion":"Lacoste","col_id":"lacoste","ref":"DTT-LC-001","precio":"$60.000","descripcion":"Gorra blanca de acabado limpio con identidad clásica. Una opción fresca, versátil y fácil de combinar.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra casual","variantes":[{"id":"default","nombre":"Blanco · Verde","hex":"#F0F0EC","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/4.png"]}]},{"id":"lacoste-cocodrilo","marca":"Lacoste","nombre":"Lacoste Cocodrilo","coleccion":"Lacoste","col_id":"lacoste","ref":"DTT-LC-002","precio":"$60.000","descripcion":"Diseño de presencia discreta con tono verde profundo. Para quienes prefieren una gorra sobria con identidad reconocible.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra estructurada","variantes":[{"id":"default","nombre":"Verde petróleo","hex":"#2E4A3E","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/2.LACOSTE_COCODRILO/1.png"]}]},{"id":"clemont-rosa","marca":"Clemont","nombre":"Clemont Rosa","coleccion":"Otras marcas","col_id":"otras-marcas","ref":"DTT-CL-001","precio":"$60.000","descripcion":"Modelo en tono rosado con estética suave y casual. Ideal para outfits claros, neutros o de acento.","tags":["Nuevo"],"cierre":"Correa ajustable","tipo":"Gorra casual","variantes":[{"id":"default","nombre":"Rosa","hex":"#E8A0A0","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/4.png"]}]},{"id":"alo-rosada","marca":"Alo","nombre":"Alo Rosa","coleccion":"Otras marcas","col_id":"otras-marcas","ref":"DTT-AL-001","precio":"$60.000","descripcion":"Gorra liviana de tono rosa, pensada para looks deportivos, casuales y de uso diario.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra liviana","variantes":[{"id":"default","nombre":"Rosa","hex":"#E8C0C8","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/5.ALO/1.ALO_ROSADA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/5.ALO/1.ALO_ROSADA/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/5.ALO/1.ALO_ROSADA/3.png"]}]},{"id":"tommy-menta","marca":"Tommy Hilfiger","nombre":"Tommy Menta","coleccion":"Otras marcas","col_id":"otras-marcas","ref":"DTT-TH-001","precio":"$60.000","descripcion":"Referencia en tono menta con contraste de visera. Una opción fresca para destacar sin recargar el outfit.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra estructurada","variantes":[{"id":"default","nombre":"Menta · Marino","hex":"#A8D8C8","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/6.TOMMY_HILFIGER/1.TOMMY_MENTA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/6.TOMMY_HILFIGER/1.TOMMY_MENTA/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/6.TOMMY_HILFIGER/1.TOMMY_MENTA/3.png"]}]},{"id":"adidas-verde","marca":"Adidas","nombre":"Adidas Originals Verde","coleccion":"Adidas","col_id":"adidas","ref":"DTT-AD-001","precio":"$60.000","descripcion":"Modelo verde de estética deportiva y urbana. Una referencia fácil de llevar con prendas negras, blancas o denim.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra estructurada","variantes":[{"id":"default","nombre":"Verde botella","hex":"#2A4A2A","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/4.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/5.png"]}]},{"id":"adidas-colombia","marca":"Adidas","nombre":"Adidas Selección Colombia","coleccion":"Adidas","col_id":"adidas","ref":"DTT-AD-002","precio":"$60.000","descripcion":"Gorra inspirada en la Selección Colombia, disponible en tonos fáciles de combinar. Para uso deportivo, casual o de colección.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Gorra deportiva","variantes":[{"id":"1.NUDE","nombre":"Nude","hex":"#D4C4A8","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/3.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/4.png"]},{"id":"2.BEIGE","nombre":"Beige","hex":"#C4B090","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/2.BEIGE/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/2.BEIGE/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/2.BEIGE/3.png"]},{"id":"3.NEGRA","nombre":"Negra","hex":"#111111","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/3.NEGRA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/3.NEGRA/2.png"]}]},{"id":"beisbolera-la","marca":"Béisbolera","nombre":"Béisbolera LA","coleccion":"Leyendas de Ciudad","col_id":"leyendas-ciudad","ref":"DTT-BL-001","precio":"$35.000","descripcion":"Silueta clásica con monograma LA. Una opción urbana, combinable y directa para uso diario.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Béisbolera curva","variantes":[{"id":"1.VERDE_VIDRIO","nombre":"Verde vidrio","hex":"#4A7A5A","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/1.VERDE_VIDRIO/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/1.VERDE_VIDRIO/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/1.VERDE_VIDRIO/3.png"]},{"id":"2.AZUL_OSCURO","nombre":"Azul marino","hex":"#1A2A4A","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/2.AZUL_OSCURO/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/2.AZUL_OSCURO/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/2.AZUL_OSCURO/3.png"]},{"id":"4.ROSADA","nombre":"Rosada","hex":"#E8A8A8","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/4.ROSADA/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/4.ROSADA/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/4.ROSADA/3.png"]},{"id":"5.NEGRO","nombre":"Negra","hex":"#111111","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/5.NEGRO/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/5.NEGRO/2.png"]}]},{"id":"beisbolera-ny","marca":"Béisbolera","nombre":"Béisbolera NY","coleccion":"Leyendas de Ciudad","col_id":"leyendas-ciudad","ref":"DTT-BL-002","precio":"$35.000","descripcion":"Modelo con monograma NY y estructura clásica. Una pieza básica para estilo urbano y uso frecuente.","tags":["Nuevo"],"cierre":"Ajuste posterior","tipo":"Béisbolera estructurada","variantes":[{"id":"1.VERDE_VIDRIO","nombre":"Verde vidrio","hex":"#4A7A5A","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/1.VERDE_VIDRIO/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/1.VERDE_VIDRIO/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/1.VERDE_VIDRIO/3.png"]},{"id":"2.BEIGE","nombre":"Beige","hex":"#C4B090","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/2.BEIGE/1.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/2.BEIGE/2.png","https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/2.BEIGE/3.png"]}]},{"id":"agro-caballo","marca":"Agro","nombre":"Agro Caballo","coleccion":"Raíces","col_id":"raices","ref":"DTT-AG-001","precio":"$60.000","descripcion":"Gorra de tono natural con bordado de caballo. Una referencia de estilo campestre llevada a un uso casual urbano.","tags":["Nuevo"],"cierre":"Correa ajustable","tipo":"Gorra casual","variantes":[{"id":"default","nombre":"Arena natural","hex":"#C8B090","imagenes":["https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/9.AGRO/1.Caballo/1.png"]}]}];
+const C={"polo-ralph-lauren":{"nombre":"Polo Ralph Lauren","ids":["polo-clasica","polo-caballo-grande","polo-letras"]},"hugo-boss":{"nombre":"Hugo Boss","ids":["boss-letras","boss-deportiva"]},"lacoste":{"nombre":"Lacoste","ids":["lacoste-paris","lacoste-cocodrilo"]},"adidas":{"nombre":"Adidas","ids":["adidas-verde","adidas-colombia"]},"otras-marcas":{"nombre":"Otras marcas","ids":["clemont-rosa","alo-rosada","tommy-menta"]},"leyendas-ciudad":{"nombre":"Leyendas de Ciudad","ids":["beisbolera-la","beisbolera-ny"]},"raices":{"nombre":"Raíces","ids":["agro-caballo"]}};
+const WA='573218194617';
+let curP=null,curV=0;
+document.addEventListener('DOMContentLoaded',()=>renderCatalog('all'));
+function renderCatalog(filter){const main=document.getElementById('catalogo');main.innerHTML='';const cols=filter==='all'?C:{[filter]:C[filter]};Object.entries(cols).forEach(([cid,col])=>{const prods=col.ids.map(id=>P.find(p=>p.id===id)).filter(Boolean);if(!prods.length)return;const sec=document.createElement('section');sec.className='cs';sec.id=cid;sec.innerHTML=`<div class="ch"><div><div class="ce">Colección</div><h2 class="ct">${col.nombre}</h2></div><div class="cc">${prods.length} modelo${prods.length!==1?'s':''}</div></div><div class="cdv"></div><div class="pg" id="g-${cid}"></div>`;main.appendChild(sec);const grid=sec.querySelector('#g-'+cid);prods.forEach(p=>grid.appendChild(makeCard(p)));});}
+function makeCard(p){const el=document.createElement('article');el.className='pc';const v=p.variantes[0];const tags=(p.tags||[]).map(t=>`<span class="tg">${t}</span>`).join('');const swatches=p.variantes.map((vv,i)=>`<button class="sw${i===0?' active':''}" style="background:${vv.hex}" data-idx="${i}" aria-label="${vv.nombre}" onclick="swapV(event,this,'${p.id}')"></button>`).join('');el.innerHTML=`<div class="pw"><img src="${(v.imagenes&&v.imagenes[0])||''}" alt="${p.nombre}" width="900" height="900" loading="lazy" onerror="imgFallback(this)"><div class="pt">${tags}</div></div><div class="pb"><div class="pcl">${p.coleccion}</div><div class="pn">${p.nombre}</div><div class="pr">${p.ref}</div><div class="pco">${swatches}</div><div class="pp">${p.precio}</div><div class="pca"><button class="bcd" onclick="openModal('${p.id}')">Ver detalles</button><button class="bwa" onclick="wa('${p.nombre}','${p.ref}','${p.precio}')">WhatsApp</button></div></div>`;return el;}
+function swapV(e,el,pid){e.stopPropagation();const p=P.find(x=>x.id===pid);if(!p)return;const idx=+el.dataset.idx;el.closest('.pco').querySelectorAll('.sw').forEach(s=>s.classList.remove('active'));el.classList.add('active');const img=el.closest('.pc').querySelector('.pw img');if(img&&p.variantes[idx]) img.src=(p.variantes[idx].imagenes&&p.variantes[idx].imagenes[0])||'';}
+function openModal(pid,vi=0){curP=P.find(p=>p.id===pid);curV=vi;if(!curP)return;renderModal();document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden';}
+function renderModal(){const p=curP,v=p.variantes[curV];document.getElementById('m-col').textContent=p.coleccion;document.getElementById('m-name').textContent=p.nombre;document.getElementById('m-ref').textContent=p.ref;document.getElementById('m-price').textContent=p.precio;document.getElementById('m-desc').textContent=p.descripcion;const detalleImgs=(v.imagenes&&v.imagenes.length>1)?v.imagenes.slice(1):(v.imagenes||[]);const mm=document.getElementById('modal-main');mm.src=detalleImgs[0]||v.imagenes[0]||'';mm.alt=p.nombre+' detalle';mm.onerror=function(){imgFallback(this)};document.getElementById('modal-thumbs').innerHTML=detalleImgs.map((img,i)=>`<img src="${img}" onerror="imgFallback(this)" class="th${i===0?' active':''}" alt="Detalle ${i+2}" loading="lazy" onclick="setMain(this,'${img}')">`).join('');document.getElementById('m-colors').innerHTML=p.variantes.map((vv,i)=>`<button class="swl${i===curV?' active':''}" style="background:${vv.hex}" aria-label="${vv.nombre}" onclick="switchV(${i})"></button>`).join('');document.getElementById('m-color-name').textContent=v.nombre;document.getElementById('m-specs').innerHTML=[['Tipo',p.tipo],['Cierre',p.cierre],['Colección',p.coleccion],['Ref.',p.ref]].filter(x=>x[1]).map(([k,val])=>`<div class="sr"><span class="sk">${k}</span><span class="sv">${val}</span></div>`).join('');const msg=encodeURIComponent(`Hola DISTRITTO, quiero consultar:
+${p.nombre}
+Color: ${v.nombre}
+Precio: ${p.precio}
+Ref: ${p.ref}`);document.getElementById('m-wa').href=`https://wa.me/${WA}?text=${msg}`;}
+function setMain(el,src){document.getElementById('modal-main').src=src;document.querySelectorAll('.th').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+function switchV(i){curV=i;renderModal();}
+function closeModal(e){if(e&&e.target!==document.getElementById('modal'))return;document.getElementById('modal').classList.remove('open');document.body.style.overflow='';}
+function filterCol(btn){document.querySelectorAll('.cb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderCatalog(btn.dataset.col);setTimeout(()=>document.getElementById('catalogo').scrollIntoView({behavior:'smooth',block:'start'}),30);}
+
+function imgFallback(img){
+  if(img.dataset.fallbackTried){img.style.opacity=.25;return;}
+  img.dataset.fallbackTried='1';
+  if(img.src.includes('/catalogo/') && !img.src.includes('/catalogo/1.CATALOGO/')){
+    img.src=img.src.replace('/catalogo/','/catalogo/1.CATALOGO/');
+  }
+}
+
+function wa(nombre,ref,precio){const msg=encodeURIComponent(`Hola DISTRITTO, quiero consultar:
+${nombre}
+Ref: ${ref}
+Precio: ${precio}`);window.open(`https://wa.me/${WA}?text=${msg}`,'_blank');}
+
+function goPerso(btn){
+  document.querySelectorAll('.cb').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  // Reset catalog to all first, then scroll to perso
+  renderCatalog('all');
+  setTimeout(()=>{
+    const s=document.getElementById('personalizacion');
+    if(s)s.scrollIntoView({behavior:'smooth',block:'start'});
+  },60);
+}
+
+
+// ── HERO CAROUSEL ────────────────────────────────────────────────────────────
+(function(){
+  var imgs = document.querySelectorAll('#hero-carousel img');
+  if(!imgs || imgs.length < 2) return;
+  var cur = 0;
+  function next(){
+    imgs[cur].style.opacity = '0';
+    cur = (cur + 1) % imgs.length;
+    imgs[cur].style.opacity = '1';
+  }
+  // Start rotating every 4 seconds after a 3s initial delay
+  setTimeout(function(){ setInterval(next, 4000); }, 3000);
+})();
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body></html>

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "thresholds": {
+    "few_units_max": 2
+  },
+  "items": {
+    "polo-clasica::default": {
+      "product_id": "polo-clasica",
+      "variant_id": "default",
+      "stock": null
+    },
+    "polo-caballo-grande::1.COLO_BLANCO_PALETA_NUDE": {
+      "product_id": "polo-caballo-grande",
+      "variant_id": "1.COLO_BLANCO_PALETA_NUDE",
+      "stock": null
+    },
+    "polo-caballo-grande::2.COLOR_CAQUI_PALETA_VERDE": {
+      "product_id": "polo-caballo-grande",
+      "variant_id": "2.COLOR_CAQUI_PALETA_VERDE",
+      "stock": null
+    },
+    "polo-letras::default": {
+      "product_id": "polo-letras",
+      "variant_id": "default",
+      "stock": null
+    },
+    "boss-letras::default": {
+      "product_id": "boss-letras",
+      "variant_id": "default",
+      "stock": null
+    },
+    "boss-deportiva::default": {
+      "product_id": "boss-deportiva",
+      "variant_id": "default",
+      "stock": null
+    },
+    "lacoste-paris::default": {
+      "product_id": "lacoste-paris",
+      "variant_id": "default",
+      "stock": null
+    },
+    "lacoste-cocodrilo::default": {
+      "product_id": "lacoste-cocodrilo",
+      "variant_id": "default",
+      "stock": null
+    },
+    "clemont-rosa::default": {
+      "product_id": "clemont-rosa",
+      "variant_id": "default",
+      "stock": null
+    },
+    "alo-rosada::default": {
+      "product_id": "alo-rosada",
+      "variant_id": "default",
+      "stock": null
+    },
+    "tommy-menta::default": {
+      "product_id": "tommy-menta",
+      "variant_id": "default",
+      "stock": null
+    },
+    "adidas-verde::default": {
+      "product_id": "adidas-verde",
+      "variant_id": "default",
+      "stock": null
+    },
+    "adidas-colombia::1.NUDE": {
+      "product_id": "adidas-colombia",
+      "variant_id": "1.NUDE",
+      "stock": null
+    },
+    "adidas-colombia::2.BEIGE": {
+      "product_id": "adidas-colombia",
+      "variant_id": "2.BEIGE",
+      "stock": null
+    },
+    "adidas-colombia::3.NEGRA": {
+      "product_id": "adidas-colombia",
+      "variant_id": "3.NEGRA",
+      "stock": null
+    },
+    "beisbolera-la::1.VERDE_VIDRIO": {
+      "product_id": "beisbolera-la",
+      "variant_id": "1.VERDE_VIDRIO",
+      "stock": null
+    },
+    "beisbolera-la::2.AZUL_OSCURO": {
+      "product_id": "beisbolera-la",
+      "variant_id": "2.AZUL_OSCURO",
+      "stock": null
+    },
+    "beisbolera-la::4.ROSADA": {
+      "product_id": "beisbolera-la",
+      "variant_id": "4.ROSADA",
+      "stock": null
+    },
+    "beisbolera-la::5.NEGRO": {
+      "product_id": "beisbolera-la",
+      "variant_id": "5.NEGRO",
+      "stock": null
+    },
+    "beisbolera-ny::1.VERDE_VIDRIO": {
+      "product_id": "beisbolera-ny",
+      "variant_id": "1.VERDE_VIDRIO",
+      "stock": null
+    },
+    "beisbolera-ny::2.BEIGE": {
+      "product_id": "beisbolera-ny",
+      "variant_id": "2.BEIGE",
+      "stock": null
+    },
+    "agro-caballo::default": {
+      "product_id": "agro-caballo",
+      "variant_id": "default",
+      "stock": null
+    }
+  }
+}

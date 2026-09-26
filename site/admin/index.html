@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DISTRITTO — Administración</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--olive:#3d4a35;--sage:#6b7a5e;--bone:#ede9e2;--ivory:#f5f3ee;--line:#d8d5ce}
+*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Barlow,sans-serif}button,input,textarea,select{font:inherit}
+header{background:var(--ink);color:var(--bone);padding:16px clamp(14px,4vw,44px);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20}.brand{font-family:"Barlow Condensed";font-size:24px;font-weight:900;letter-spacing:.08em}.mode{font-size:11px;color:var(--sage)}
+nav{display:flex;gap:4px;overflow:auto;background:#1c1a17;padding:0 clamp(10px,4vw,44px);position:sticky;top:58px;z-index:19}.tab-btn{border:0;background:transparent;color:#aaa;padding:14px 16px;font-family:"Barlow Condensed";font-weight:800;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;cursor:pointer}.tab-btn.active{background:var(--olive);color:var(--bone)}
+main{max-width:1200px;margin:auto;padding:24px 14px 80px}.tab{display:none}.tab.active{display:block}.heading{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:18px}.heading h1{font-family:"Barlow Condensed";font-size:clamp(34px,5vw,54px);line-height:.95;margin:0}.heading p{max-width:620px;color:#666;line-height:1.6}
+.panel{background:#fff;border:1px solid var(--line);padding:20px;margin:12px 0}.panel h2,.panel h3{font-family:"Barlow Condensed";margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.full{grid-column:1/-1}
+label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:600}input,textarea,select{width:100%;padding:11px;border:1px solid var(--line);background:white}textarea{min-height:92px}
+.btn{border:0;padding:10px 15px;font-family:"Barlow Condensed";font-weight:900;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}.primary{background:var(--olive);color:var(--bone)}.dark{background:var(--ink);color:var(--bone)}.ghost{background:var(--bone);color:var(--ink)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.status{padding:12px;background:#efede7;font-size:13px;white-space:pre-wrap;margin-top:12px}.status.error{background:#f4dfda}
+.table-wrap{overflow:auto;border:1px solid var(--line);background:white}table{width:100%;border-collapse:collapse;min-width:760px}th,td{padding:11px;border-bottom:1px solid #eee;text-align:left;vertical-align:middle}th{font-family:"Barlow Condensed";text-transform:uppercase;font-size:11px;letter-spacing:.1em;background:#f0eee8}.muted{color:#777;font-size:12px}.badge{display:inline-block;padding:4px 7px;font-size:10px;font-weight:800;text-transform:uppercase;background:#eee}.badge.sold{background:#111;color:#fff}.badge.last{background:#7a2f22;color:#fff}.badge.few{background:#7a6a2f;color:#fff}.badge.available{background:#3d4a35;color:#fff}.badge.unregistered{background:#d8d5ce;color:#444}
+.variant{border:1px solid var(--line);padding:14px;margin-top:10px}.variant-head{display:flex;justify-content:space-between;align-items:center}.preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:6px;margin-top:8px}.preview figure{margin:0;background:#eee}.preview img{width:100%;aspect-ratio:1;object-fit:cover}.preview figcaption{padding:5px;font-size:10px}.cover{outline:3px solid var(--olive)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}.metric{background:#fff;border:1px solid var(--line);padding:18px}.metric strong{font-family:"Barlow Condensed";font-size:36px;display:block}.metric span{font-size:12px;color:#666}
+dialog{border:0;padding:0;max-width:850px;width:calc(100% - 24px);max-height:90vh}dialog::backdrop{background:rgba(0,0,0,.7)}.dialog-body{padding:20px;overflow:auto;max-height:90vh}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.heading{display:block}.heading p{margin-top:10px}}
+</style>
+</head>
+<body>
+<header><div class="brand">DISTRITTO / ADMIN</div><div class="mode">MODO LOCAL</div></header>
+<nav>
+<button class="tab-btn active" data-tab="dashboard">Resumen</button>
+<button class="tab-btn" data-tab="new">Nueva pieza</button>
+<button class="tab-btn" data-tab="products">Productos</button>
+<button class="tab-btn" data-tab="collections">Colecciones</button>
+<button class="tab-btn" data-tab="inventory">Unidades</button>
+<button class="tab-btn" data-tab="discounts">Descuentos</button>
+</nav>
+<main>
+<section class="tab active" id="dashboard"><div class="heading"><div><div class="muted">OPERACIÓN</div><h1>Resumen</h1></div><p>En esta versión los cambios sí se guardan localmente en los archivos del proyecto.</p></div><div class="cards" id="metrics"></div></section>
+
+<section class="tab" id="new">
+<div class="heading"><div><div class="muted">CATÁLOGO</div><h1>Nueva pieza</h1></div><p>Una referencia puede tener varios colores. Cada color tiene carpeta propia y la foto 1 es siempre portada.</p></div>
+<form id="new-form">
+<div class="panel"><h2>Datos del producto</h2><div class="grid" style="margin-top:14px">
+<label>Nombre<input name="name" required></label><label>Referencia<input name="reference" required></label>
+<label>Marca<input name="brand" required value="DISTRITTO"></label><label>Colección><select name="collection_id" class="collection-select" required></select></label>
+<label>Precio COP<input name="price_cop" type="number" min="0" step="1000" required></label><label>Carpeta del producto<input name="product_folder" required></label>
+<label>Tipo<input name="type"></label><label>Cierre<input name="closure"></label><label class="full">Etiquetas<input name="tags" placeholder="Nuevo, Edición limitada"></label><label class="full">Descripción<textarea name="description" required></textarea></label>
+</div></div>
+<div class="panel"><div class="heading" style="margin:0"><h2>Colores</h2><button class="btn ghost" type="button" id="add-variant">+ Añadir color</button></div><div id="variants"></div></div>
+<div class="actions"><button class="btn primary" type="submit">Guardar pieza</button></div><div class="status" id="new-status">Lista para diligenciar.</div>
+</form>
+</section>
+
+<section class="tab" id="products"><div class="heading"><div><div class="muted">CATÁLOGO</div><h1>Productos</h1></div><p>Edita productos ya existentes, incluyendo su precio. Las imágenes actuales se conservan.</p></div><div class="table-wrap"><table><thead><tr><th>Ref.</th><th>Producto</th><th>Colección</th><th>Precio</th><th>Variantes</th><th></th></tr></thead><tbody id="products-body"></tbody></table></div></section>
+
+<section class="tab" id="collections"><div class="heading"><div><div class="muted">ORGANIZACIÓN</div><h1>Colecciones</h1></div><p>Puedes crear una colección nueva o cambiar el nombre visible de una existente.</p></div>
+<div class="panel"><h2>Nueva colección</h2><form id="collection-form" class="grid" style="margin-top:12px"><label>ID / slug<input name="id" required placeholder="insignia-distritto"></label><label>Nombre<input name="name" required placeholder="Insignia DISTRITTO"></label><div class="actions full"><button class="btn primary">Crear colección</button></div></form></div>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Nombre</th><th>Productos</th><th></th></tr></thead><tbody id="collections-body"></tbody></table></div></section>
+
+<section class="tab" id="inventory"><div class="heading"><div><div class="muted">INVENTARIO</div><h1>Unidades</h1></div><p>El stock se controla por color/variante: 0 Agotado, 1 Última unidad, 2 Pocas unidades, 3 o más Disponible.</p></div><div class="table-wrap"><table><thead><tr><th>Ref.</th><th>Producto</th><th>Color</th><th>SKU</th><th>Unidades</th><th>Estado</th><th></th></tr></thead><tbody id="inventory-body"></tbody></table></div></section>
+
+<section class="tab" id="discounts"><div class="heading"><div><div class="muted">PRECIOS</div><h1>Descuentos</h1></div><p>Para esta prueba puedes crear descuentos por producto, colección o catálogo completo. La regla definitiva la ajustaremos después.</p></div>
+<div class="panel"><h2>Nuevo descuento</h2><form id="discount-form" class="grid" style="margin-top:12px">
+<label>Nombre<input name="name" required placeholder="Fin de semana"></label><label>Tipo><select name="discount_type"><option value="percentage">Porcentaje</option><option value="fixed">Valor fijo COP</option></select></label>
+<label>Valor<input name="value" type="number" min="1" required></label><label>Aplica a><select name="scope" id="discount-scope"><option value="product">Producto</option><option value="collection">Colección</option><option value="all">Todo el catálogo</option></select></label>
+<label class="full" id="discount-target-wrap">Objetivo<select name="target_id" id="discount-target"></select></label>
+<div class="actions full"><button class="btn primary">Crear descuento</button></div></form></div>
+<div class="table-wrap"><table><thead><tr><th>Nombre</th><th>Tipo</th><th>Valor</th><th>Alcance</th><th>Objetivo</th><th>Activo</th><th></th></tr></thead><tbody id="discounts-body"></tbody></table></div></section>
+</main>
+
+<template id="variant-template"><div class="variant"><div class="variant-head"><h3>Color <span class="num"></span></h3><button type="button" class="btn ghost remove">Eliminar</button></div><div class="grid" style="margin-top:10px">
+<label>Nombre<input data-field="name" required></label><label>Color visual<input data-field="color_hex" type="color" value="#111111"></label><label>Carpeta<input data-field="folder" required></label><label>SKU<input data-field="sku"></label><label>Costo unitario COP<input data-field="unit_cost_cop" type="number" min="0" value="0"></label><label>Unidades iniciales<input data-field="initial_stock" type="number" min="0" value="0" required></label><label class="full">Fotografías<input data-field="images" type="file" accept="image/png,image/jpeg,image/webp" multiple required></label></div><div class="muted plan"></div><div class="preview"></div></div></template>
+
+<dialog id="edit-dialog"><div class="dialog-body"><div class="heading"><h2>Editar producto</h2><button class="btn ghost" type="button" onclick="document.getElementById('edit-dialog').close()">Cerrar</button></div><form id="edit-form"><div id="edit-fields"></div><div class="actions" style="margin-top:16px"><button class="btn primary">Guardar cambios</button></div><div class="status" id="edit-status"></div></form></div></dialog>
+
+<script src="admin.js"></script><script src="admin_v1.js"></script>
+</body></html>

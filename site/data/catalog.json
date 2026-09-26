@@ -1,0 +1,635 @@
+{
+  "schema_version": 1,
+  "currency": "COP",
+  "image_rule": {
+    "base_path": "catalogo/{product_folder}/{variant_folder}/",
+    "cover_image": 1,
+    "sequence": "1..n",
+    "notes": "Cada variante/color tiene su propia carpeta. La imagen 1 es siempre la portada."
+  },
+  "collections": [
+    {
+      "id": "polo-ralph-lauren",
+      "name": "Polo Ralph Lauren",
+      "product_ids": [
+        "polo-clasica",
+        "polo-caballo-grande",
+        "polo-letras"
+      ]
+    },
+    {
+      "id": "hugo-boss",
+      "name": "Hugo Boss",
+      "product_ids": [
+        "boss-letras",
+        "boss-deportiva"
+      ]
+    },
+    {
+      "id": "lacoste",
+      "name": "Lacoste",
+      "product_ids": [
+        "lacoste-paris",
+        "lacoste-cocodrilo"
+      ]
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas",
+      "product_ids": [
+        "adidas-verde",
+        "adidas-colombia"
+      ]
+    },
+    {
+      "id": "otras-marcas",
+      "name": "Otras marcas",
+      "product_ids": [
+        "clemont-rosa",
+        "alo-rosada",
+        "tommy-menta"
+      ]
+    },
+    {
+      "id": "leyendas-ciudad",
+      "name": "Leyendas de Ciudad",
+      "product_ids": [
+        "beisbolera-la",
+        "beisbolera-ny"
+      ]
+    },
+    {
+      "id": "raices",
+      "name": "Raíces",
+      "product_ids": [
+        "agro-caballo"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "polo-clasica",
+      "brand": "Polo Ralph Lauren",
+      "name": "Polo Clásica",
+      "collection_id": "polo-ralph-lauren",
+      "reference": "DTT-PRL-001",
+      "price_cop": 60000,
+      "description": "Gorra clásica de uso diario, con visera curva, ajuste posterior y presencia limpia. Una referencia fácil de combinar para looks urbanos y casuales.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Correa ajustable",
+      "type": "Gorra curva clásica",
+      "product_folder": "1.POLO_RALPH_LAUREN",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Caqui",
+          "color_hex": "#C4A882",
+          "folder": "1.POLO_CLASICA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/4.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/1.POLO_CLASICA/5.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polo-caballo-grande",
+      "brand": "Polo Ralph Lauren",
+      "name": "Polo Caballo Central",
+      "collection_id": "polo-ralph-lauren",
+      "reference": "DTT-PRL-002",
+      "price_cop": 60000,
+      "description": "Diseño con bordado protagonista al frente y construcción clásica. Una opción con más presencia visual sin perder versatilidad.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Correa ajustable",
+      "type": "Gorra curva estructurada",
+      "product_folder": "2.POLO_CABALLO_CENTRAL_GRANDE",
+      "active": true,
+      "variants": [
+        {
+          "id": "1.COLO_BLANCO_PALETA_NUDE",
+          "name": "Blanco · Nude",
+          "color_hex": "#F0EDE5",
+          "folder": "1.COLO_BLANCO_PALETA_NUDE",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/4.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/5.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/1.COLO_BLANCO_PALETA_NUDE/6.png"
+          ]
+        },
+        {
+          "id": "2.COLOR_CAQUI_PALETA_VERDE",
+          "name": "Caqui · Verde",
+          "color_hex": "#C4A882",
+          "folder": "2.COLOR_CAQUI_PALETA_VERDE",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/4.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/2.POLO_CABALLO_CENTRAL_GRANDE/2.COLOR_CAQUI_PALETA_VERDE/5.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polo-letras",
+      "brand": "Polo Ralph Lauren",
+      "name": "Polo Bordado Frontal",
+      "collection_id": "polo-ralph-lauren",
+      "reference": "DTT-PRL-003",
+      "price_cop": 60000,
+      "description": "Modelo de paleta oscura con bordado frontal de alta lectura. Funciona bien para un estilo sobrio, directo y fácil de llevar.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Correa ajustable",
+      "type": "Gorra curva casual",
+      "product_folder": "1.POLO_RALPH_LAUREN",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Negro",
+          "color_hex": "#111111",
+          "folder": "3.POLO_LETRAS_GRANDES",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/1.POLO_RALPH_LAUREN/3.POLO_LETRAS_GRANDES/4.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boss-letras",
+      "brand": "Hugo Boss",
+      "name": "Boss Logo Frontal",
+      "collection_id": "hugo-boss",
+      "reference": "DTT-HB-001",
+      "price_cop": 60000,
+      "description": "Gorra de estructura firme con logo frontal limpio. Una alternativa sobria para combinar con prendas básicas o looks más pulidos.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra estructurada",
+      "product_folder": "2.HUGO_BOSS",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Negro",
+          "color_hex": "#111111",
+          "folder": "1.HUGO_BOSS_LETRAS",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/1.HUGO_BOSS_LETRAS/4.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boss-deportiva",
+      "brand": "Hugo Boss",
+      "name": "Boss Sport",
+      "collection_id": "hugo-boss",
+      "reference": "DTT-HB-002",
+      "price_cop": 60000,
+      "description": "Modelo de enfoque deportivo con contraste de color y acabado funcional. Pensada para uso diario, entrenamiento o estilo urbano activo.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra deportiva",
+      "product_folder": "2.HUGO_BOSS",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Negro · Rojo",
+          "color_hex": "#1A1A1A",
+          "folder": "2.HUGO_BOSS_DEPORTIVA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/2.HUGO_BOSS_DEPORTIVA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/2.HUGO_BOSS_DEPORTIVA/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/2.HUGO_BOSS/2.HUGO_BOSS_DEPORTIVA/3.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lacoste-paris",
+      "brand": "Lacoste",
+      "name": "Lacoste Paris",
+      "collection_id": "lacoste",
+      "reference": "DTT-LC-001",
+      "price_cop": 60000,
+      "description": "Gorra blanca de acabado limpio con identidad clásica. Una opción fresca, versátil y fácil de combinar.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra casual",
+      "product_folder": "3.LA_COSTE",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Blanco · Verde",
+          "color_hex": "#F0F0EC",
+          "folder": "1.LACOSTE_PARIS",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/1.LACOSTE_PARIS/4.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lacoste-cocodrilo",
+      "brand": "Lacoste",
+      "name": "Lacoste Cocodrilo",
+      "collection_id": "lacoste",
+      "reference": "DTT-LC-002",
+      "price_cop": 60000,
+      "description": "Diseño de presencia discreta con tono verde profundo. Para quienes prefieren una gorra sobria con identidad reconocible.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra estructurada",
+      "product_folder": "3.LA_COSTE",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Verde petróleo",
+          "color_hex": "#2E4A3E",
+          "folder": "2.LACOSTE_COCODRILO",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/3.LA_COSTE/2.LACOSTE_COCODRILO/1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clemont-rosa",
+      "brand": "Clemont",
+      "name": "Clemont Rosa",
+      "collection_id": "otras-marcas",
+      "reference": "DTT-CL-001",
+      "price_cop": 60000,
+      "description": "Modelo en tono rosado con estética suave y casual. Ideal para outfits claros, neutros o de acento.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Correa ajustable",
+      "type": "Gorra casual",
+      "product_folder": "4.CLEMONT",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Rosa",
+          "color_hex": "#E8A0A0",
+          "folder": "1.CLEMONT_ROSA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/4.CLEMONT/1.CLEMONT_ROSA/4.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alo-rosada",
+      "brand": "Alo",
+      "name": "Alo Rosa",
+      "collection_id": "otras-marcas",
+      "reference": "DTT-AL-001",
+      "price_cop": 60000,
+      "description": "Gorra liviana de tono rosa, pensada para looks deportivos, casuales y de uso diario.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra liviana",
+      "product_folder": "5.ALO",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Rosa",
+          "color_hex": "#E8C0C8",
+          "folder": "1.ALO_ROSADA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/5.ALO/1.ALO_ROSADA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/5.ALO/1.ALO_ROSADA/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/5.ALO/1.ALO_ROSADA/3.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tommy-menta",
+      "brand": "Tommy Hilfiger",
+      "name": "Tommy Menta",
+      "collection_id": "otras-marcas",
+      "reference": "DTT-TH-001",
+      "price_cop": 60000,
+      "description": "Referencia en tono menta con contraste de visera. Una opción fresca para destacar sin recargar el outfit.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra estructurada",
+      "product_folder": "6.TOMMY_HILFIGER",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Menta · Marino",
+          "color_hex": "#A8D8C8",
+          "folder": "1.TOMMY_MENTA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/6.TOMMY_HILFIGER/1.TOMMY_MENTA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/6.TOMMY_HILFIGER/1.TOMMY_MENTA/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/6.TOMMY_HILFIGER/1.TOMMY_MENTA/3.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adidas-verde",
+      "brand": "Adidas",
+      "name": "Adidas Originals Verde",
+      "collection_id": "adidas",
+      "reference": "DTT-AD-001",
+      "price_cop": 60000,
+      "description": "Modelo verde de estética deportiva y urbana. Una referencia fácil de llevar con prendas negras, blancas o denim.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra estructurada",
+      "product_folder": "7.ADIDAS",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Verde botella",
+          "color_hex": "#2A4A2A",
+          "folder": "1.ADIDAS_ORIGINALS_VERDE",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/4.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/1.ADIDAS_ORIGINALS_VERDE/5.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adidas-colombia",
+      "brand": "Adidas",
+      "name": "Adidas Selección Colombia",
+      "collection_id": "adidas",
+      "reference": "DTT-AD-002",
+      "price_cop": 60000,
+      "description": "Gorra inspirada en la Selección Colombia, disponible en tonos fáciles de combinar. Para uso deportivo, casual o de colección.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Gorra deportiva",
+      "product_folder": "2.SELECCION_COLOMBIA",
+      "active": true,
+      "variants": [
+        {
+          "id": "1.NUDE",
+          "name": "Nude",
+          "color_hex": "#D4C4A8",
+          "folder": "1.NUDE",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/3.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/1.NUDE/4.png"
+          ]
+        },
+        {
+          "id": "2.BEIGE",
+          "name": "Beige",
+          "color_hex": "#C4B090",
+          "folder": "2.BEIGE",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/2.BEIGE/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/2.BEIGE/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/2.BEIGE/3.png"
+          ]
+        },
+        {
+          "id": "3.NEGRA",
+          "name": "Negra",
+          "color_hex": "#111111",
+          "folder": "3.NEGRA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/3.NEGRA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/7.ADIDAS/2.SELECCION_COLOMBIA/3.NEGRA/2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beisbolera-la",
+      "brand": "Béisbolera",
+      "name": "Béisbolera LA",
+      "collection_id": "leyendas-ciudad",
+      "reference": "DTT-BL-001",
+      "price_cop": 35000,
+      "description": "Silueta clásica con monograma LA. Una opción urbana, combinable y directa para uso diario.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Béisbolera curva",
+      "product_folder": "1.LA",
+      "active": true,
+      "variants": [
+        {
+          "id": "1.VERDE_VIDRIO",
+          "name": "Verde vidrio",
+          "color_hex": "#4A7A5A",
+          "folder": "1.VERDE_VIDRIO",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/1.VERDE_VIDRIO/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/1.VERDE_VIDRIO/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/1.VERDE_VIDRIO/3.png"
+          ]
+        },
+        {
+          "id": "2.AZUL_OSCURO",
+          "name": "Azul marino",
+          "color_hex": "#1A2A4A",
+          "folder": "2.AZUL_OSCURO",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/2.AZUL_OSCURO/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/2.AZUL_OSCURO/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/2.AZUL_OSCURO/3.png"
+          ]
+        },
+        {
+          "id": "4.ROSADA",
+          "name": "Rosada",
+          "color_hex": "#E8A8A8",
+          "folder": "4.ROSADA",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/4.ROSADA/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/4.ROSADA/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/4.ROSADA/3.png"
+          ]
+        },
+        {
+          "id": "5.NEGRO",
+          "name": "Negra",
+          "color_hex": "#111111",
+          "folder": "5.NEGRO",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/5.NEGRO/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/1.LA/5.NEGRO/2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beisbolera-ny",
+      "brand": "Béisbolera",
+      "name": "Béisbolera NY",
+      "collection_id": "leyendas-ciudad",
+      "reference": "DTT-BL-002",
+      "price_cop": 35000,
+      "description": "Modelo con monograma NY y estructura clásica. Una pieza básica para estilo urbano y uso frecuente.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Ajuste posterior",
+      "type": "Béisbolera estructurada",
+      "product_folder": "2.NY",
+      "active": true,
+      "variants": [
+        {
+          "id": "1.VERDE_VIDRIO",
+          "name": "Verde vidrio",
+          "color_hex": "#4A7A5A",
+          "folder": "1.VERDE_VIDRIO",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/1.VERDE_VIDRIO/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/1.VERDE_VIDRIO/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/1.VERDE_VIDRIO/3.png"
+          ]
+        },
+        {
+          "id": "2.BEIGE",
+          "name": "Beige",
+          "color_hex": "#C4B090",
+          "folder": "2.BEIGE",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/2.BEIGE/1.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/2.BEIGE/2.png",
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/8.BEISBOLERAS/2.NY/2.BEIGE/3.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agro-caballo",
+      "brand": "Agro",
+      "name": "Agro Caballo",
+      "collection_id": "raices",
+      "reference": "DTT-AG-001",
+      "price_cop": 60000,
+      "description": "Gorra de tono natural con bordado de caballo. Una referencia de estilo campestre llevada a un uso casual urbano.",
+      "tags": [
+        "Nuevo"
+      ],
+      "closure": "Correa ajustable",
+      "type": "Gorra casual",
+      "product_folder": "9.AGRO",
+      "active": true,
+      "variants": [
+        {
+          "id": "default",
+          "name": "Arena natural",
+          "color_hex": "#C8B090",
+          "folder": "1.Caballo",
+          "sku": "",
+          "active": true,
+          "images": [
+            "https://cfroquemes5.github.io/distritto-catalogo-assets/catalogo/9.AGRO/1.Caballo/1.png"
+          ]
+        }
+      ]
+    }
+  ]
+}
